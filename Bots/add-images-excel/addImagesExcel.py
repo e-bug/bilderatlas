@@ -2,7 +2,7 @@
 """
 Created on Wed Mar 23 19:11:06 2016
 
-@author: Emanuele
+@author: e-bug
 """
 
 #! python3
@@ -13,16 +13,16 @@ import requests
 
 url = "http://replica.dhlabdemo.org:5009/api/v1/database"
 
-print('Opening workbook')
-wb = openpyxl.load_workbook('lastchargeTables.xlsx')
-sheets = ['Table46', 'Table2', 'Table25', 'Table45']
+original_excel_file = 'tables.xlsx'	#name of the original Excel file containing metadata of the pictures but no ID 
+sheets = ['Table46', 'Table2', 'Table25', 'Table45']	#names of the sheets inside the original Excel file
+updated_excel_file = 'finalTables.xlsx'	#name of the updated Excel file containing metadata of the pictures and their IDs
+
+
+wb = openpyxl.load_workbook(original)	
 
 for s in range(0, len(sheets)):
-    print('Reading', sheets[s])
     sheet = wb.get_sheet_by_name(sheets[s])
-    print('Reading rows')
     for r in range(2, sheet.max_row+1): # skip the first row
-		
         imageURL = sheet['A' + str(r)].value        
         if(imageURL is None):
             print("Missing image URL at ", sheet, "-", r)
@@ -57,7 +57,7 @@ for s in range(0, len(sheets)):
         webpageURL = sheet['K' + str(r)].value
         if(webpageURL is None):
             webpageURL = ""
-        
+		
         
         jsonData = {"image_url": str(imageURL),
                 "metadata": {"author": str(author),
@@ -73,14 +73,14 @@ for s in range(0, len(sheets)):
                "webpage_url": str(webpageURL)
                }
         req = requests.post(url, json = jsonData)
-        print(req)
+		print(req)
 
         ID = str(req.json())
         
         #update worksheet
         sheet.cell(row=r, column=12).value = ID #first index is 1. L <-> 12
         
-wb.save('2004Tables.xlsx')
+wb.save(updated_excel_file)
  
         
 

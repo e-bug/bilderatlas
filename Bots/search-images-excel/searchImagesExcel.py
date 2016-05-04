@@ -2,7 +2,7 @@
 """
 Created on Wed Mar 23 18:40:06 2016
 
-@author: Emanuele
+@author: e-bug
 """
 
 #! python3
@@ -16,7 +16,7 @@ import time
 import os
 import urllib.request
 
-
+# replace any invalid character in a filename with '_'
 def valid_filename(filename):
     invalid_chars = "#<$+%>!`&*‘'|{?“=}/:\@"
     l = list(filename)
@@ -25,14 +25,17 @@ def valid_filename(filename):
             l[i]='_'
     return ''.join(l)
     
-url = "http://replica.dhlabdemo.org:5009/api/v1/search/ids"
-nResults = 30
 
-wb = openpyxl.load_workbook('searchIDs.xlsx')
+url = "http://replica.dhlabdemo.org:5009/api/v1/search/ids"
+nResults = 30	#number of results returned by the database
+excel_file = 'searchIDs.xlsx'
 sheets = ['Query']
+
+
+wb = openpyxl.load_workbook(excel_file)
 sheet = wb.get_sheet_by_name(sheets[0])
 
-# create directory
+# create directory for the current query having as name the current time
 dirName = time.strftime("%Y%m%d%H%M%S")
 if not os.path.exists(dirName):
     os.makedirs(dirName)

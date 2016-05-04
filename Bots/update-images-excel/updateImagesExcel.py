@@ -2,7 +2,7 @@
 """
 Created on Wed Apr 13 18:17:22 2016
 
-@author: Emanuele
+@author: e-bug
 """
 
 #! python3
@@ -13,16 +13,16 @@ import requests
 
 DBurl = "http://replica.dhlabdemo.org:5009/api/v1/database/id/"
 
-print('Opening workbook')
-wb = openpyxl.load_workbook('toBeUpdated.xlsx')
+excel_file = 'toBeUpdated.xlsx'
 sheets = ['ToUpdate']
 
+
+wb = openpyxl.load_workbook(excel_file)
+
 for s in range(0, len(sheets)):
-    print('Reading', sheets[s])
     sheet = wb.get_sheet_by_name(sheets[s])
-    print('Reading rows')
+	
     for r in range(2, sheet.max_row+1): # skip the first row
-		
         imageID = sheet['A' + str(r)].value
         if(imageID is None):
             print("Missing image ID at ", sheet, "-", r)
@@ -47,7 +47,6 @@ for s in range(0, len(sheets)):
         typeImg = sheet['G' + str(r)].value
         if(typeImg is None):
             typeImg = ""
-        
         
         jsonData = {"metadata": {"author": str(author),
                              "title": str(title),

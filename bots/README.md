@@ -1,4 +1,4 @@
-# About these folders.
+# About these folders
 
 This directory contains some Python scripts to communicate with the DH Replica server.
 

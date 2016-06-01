@@ -19,6 +19,8 @@ The results of the query are placed in a new directory containing an Excel file 
   * the result images, named in descending order of score
     * if you do not want to retrieve them, comment (by using `#`) lines 81 and 82 of the source file.
 
+A [video](https://github.com/e-bug/bilderatlas/blob/master/demo/bilderatlas_search-excel.avi) showing how to perform query by using this script is available in the demo folder.
+
 ##searchIDs.xlsx
 Example file corresponding to `excel_file` in the script. It consists of the following columns:
 * positive IDs

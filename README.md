@@ -97,11 +97,9 @@ _E.Bugliarello, E.Caputo, A.Giunto_
 
 
 <hr />
-<p style="text-align: justify;"><strong>NB: </strong>All the work we have carried out (including all the scripts) is open source. It is freely available at <a href="https://github.com/e-bug/bilderatlas">https://github.com/e-bug/bilderatlas</a>.</p>
-
 <h2 style="text-align: justify;"><strong>References</strong></h2>
-<p style="text-align: justify;">[1]        <a href="http://en.wikipedia.org/wiki/Aby_Warburg"> http://en.wikipedia.org/wiki/Aby_Warburg</a></p>
-<p style="text-align: justify;">[2]     Isabella di Lenardo, Benoit Seguin, Frédéric Kaplan. Visual Patterns Discovery in Large Databases of Paintings<strong>.</strong></p>
-<p style="text-align: justify;">[3]        <a href="http://www.engramma.it/eOS2/atlante/">http://www.engramma.it/eOS2/atlante/</a></p>
+<p style="text-align: justify;">[1]         <a href="http://en.wikipedia.org/wiki/Aby_Warburg"> http://en.wikipedia.org/wiki/Aby_Warburg</a></p>
+<p style="text-align: justify;">[2]         Isabella di Lenardo, Benoit Seguin, Frédéric Kaplan. Visual Patterns Discovery in Large Databases of Paintings<strong>.</strong></p>
+<p style="text-align: justify;">[3]         <a href="http://www.engramma.it/eOS2/atlante/">http://www.engramma.it/eOS2/atlante/</a></p>
 <p style="text-align: justify;">[4]         L’Atlas Mnémosyne, Aby Warburg, <strong>2012</strong>, <em>L’écarquillé.</em></p>
 <p style="text-align: justify;">[5]         <a href="http://warburg.library.cornell.edu">http://warburg.library.cornell.edu</a></p>

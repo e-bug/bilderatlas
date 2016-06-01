@@ -27,7 +27,7 @@ Example file corresponding to `original_excel_file` in the script. It consists o
 * Table Number
 * Picture Number
 * Webpage URL
-* ID (not used here, but it will hold the IDs in `updated_excel_file.xlsx`.
+* ID (not used here, but it will hold the IDs in `updated_excel_file.xlsx`)
 
 ##finalTables.xlsx
 Example file corresponding to `updated_excel_file` in the script. 

@@ -18,7 +18,7 @@ sheets = ['Table46', 'Table2', 'Table25', 'Table45']	#names of the sheets inside
 updated_excel_file = 'finalTables.xlsx'	#name of the updated Excel file containing metadata of the pictures and their IDs
 
 
-wb = openpyxl.load_workbook(original)	
+wb = openpyxl.load_workbook(original_excel_file)	
 
 for s in range(0, len(sheets)):
     sheet = wb.get_sheet_by_name(sheets[s])

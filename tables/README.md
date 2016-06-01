@@ -11,4 +11,4 @@ It is a strictly visual table with stone and pillar reliefs.
 This table contains several paintings of buildings that have a similar internal architecture, with scenes in the foreground. The theme of the table sees dynamic, violent scenes, in contrast with calm, static scenes.
 
 ### Table 46 - Series of variations on Ghirlandaio's fruit-bearing “nymph”, reported in paintings, drawings and photos.
-The theme of the _Nymph_ can clearly be observed by the human eye in several of these paintings, but it is interesting to see whether CNNs are able to recognize the figure starting from the woman in the _La nascita di San Giovanni Battista_ by Domenico Ghirlandaio. (top, right in the table).
+The theme of the _Nymph_ can clearly be observed by the human eye in several of these paintings, but it is interesting to see whether CNNs are able to recognize the figure starting from the woman in the _La nascita di San Giovanni Battista_ by Domenico Ghirlandaio (top, right in the table).

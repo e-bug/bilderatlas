@@ -89,7 +89,7 @@ _E.Bugliarello, E.Caputo, A.Giunto_
 <p style="text-align: justify;">In table 46 we find two other nymph-like figures (Figure 20). They are two drawings, with women carrying vases. Despite the strong similarities with the nymph in <em>The Birth of St John the Baptist,</em> no other nymph-like figures were reported querying the two drawings (both together and separately). This is probably because paintings and drawings are too different from the CNN standpoint. The background has indeed a strong influence when querying an image, and we have a proof when we query one drawing at a time. We mainly find other drawings whose background is similar. The other <em>Woman carrying vase</em> is reported, but with a considerable lower score.</p>
 <p style="text-align: justify;">We saw such a strong influence of the background also when querying the miniatures from table 2.</p>
 <a href="http://veniceatlas.epfl.ch/wp-content/uploads/2016/05/women-carrying-vases.png"><img class=" wp-image-6127" src="http://veniceatlas.epfl.ch/wp-content/uploads/2016/05/women-carrying-vases-300x212.png" alt="Figure BOH - Women carrying vases, table 46." width="490" height="346" /></a> <br />_Figure 20 - Women carrying vases, table 46._
-<h2 style="text-align: justify;"><strong>Conclusion</strong></h2>
+<h3 style="text-align: justify;"><strong>Conclusion</strong></h2>
 <p style="text-align: justify;">To conclude, the strengths of this algorithm originate from the extraction of a low-level characterization of the images. The possibility of constructing a common feature by launching more images at the same time allows the user to guide the algorithm towards the desired pattern.</p>
 <p style="text-align: justify;">The algorithm proved to be extremely successful as far as strong visual patterns are concerned. In some cases, images with extremely similar styles were reported, and the artists were found indeed to have operated in the same epoch.</p>
 <p style="text-align: justify;">Some surprising results were achieved with the pattern of the open arms in table 2, and the two contrasting paintings in table 45. Several different patterns were explored, and the CNN found a high number of other images that could fit well in Warburg's tables. The algorithm was also able to find connections between different tables, such as in the case of Tura's <em>Allegory of August.</em></p>
@@ -97,7 +97,7 @@ _E.Bugliarello, E.Caputo, A.Giunto_
 
 
 <hr />
-<h2 style="text-align: justify;"><strong>References</strong></h2>
+<h3 style="text-align: justify;"><strong>References</strong></h2>
 <p style="text-align: justify;">[1]         <a href="http://en.wikipedia.org/wiki/Aby_Warburg"> http://en.wikipedia.org/wiki/Aby_Warburg</a></p>
 <p style="text-align: justify;">[2]         Isabella di Lenardo, Benoit Seguin, Frédéric Kaplan. Visual Patterns Discovery in Large Databases of Paintings<strong>.</strong></p>
 <p style="text-align: justify;">[3]         <a href="http://www.engramma.it/eOS2/atlante/">http://www.engramma.it/eOS2/atlante/</a></p>

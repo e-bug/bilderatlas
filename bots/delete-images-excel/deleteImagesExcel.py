@@ -14,8 +14,9 @@ import requests
 DBurl = "http://replica.dhlabdemo.org:5009/api/v1/database/id/"
 
 excel_file = 'toBeEliminated.xlsx'	#name of the file containing the IDs of the images to be deleted in the database
-wb = openpyxl.load_workbook(excel_file)
 sheets = ['ToEliminate']
+
+wb = openpyxl.load_workbook(excel_file)
 
 for s in range(0, len(sheets)):
     sheet = wb.get_sheet_by_name(sheets[s])
